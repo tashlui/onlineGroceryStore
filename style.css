@@ -1,0 +1,531 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	font-size: 16px;
+}
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	min-height: 100%;
+	color: #555555;
+	background-color:#f8faf7;
+	margin: 0;
+	padding-bottom: 100px; 
+}
+.content-wrapper {
+	width: 1050px;
+	margin: 0 auto;
+}
+header {
+	border-bottom: 1px solid #EEEEEE;
+}
+header .content-wrapper {
+	display: flex;
+}
+header h1 a {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	font-size: 20px;
+	text-decoration: none;
+	color: #555555;
+	padding: 12px 0;
+	margin-left: -150px;
+}
+header nav ul li{
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: left;
+	align-items:baseline;
+	float: left;
+	list-style: none;
+	position: relative;
+}
+header nav ul li a {
+	display:block;
+	text-decoration: none;
+	color: #555555;
+	padding: 10px 5px;
+	margin: 0 5px;
+	float: left;
+	list-style: none;
+}
+header nav ul li a:hover {
+	color: #87ab69;
+}
+header nav ul li ul{
+	display:none;
+	position:absolute;
+	padding:5px;
+
+}
+header nav ul li:hover ul{ 
+	display:block;
+	float:left;
+	margin-top: 40px;
+	background-color:#f8faf7;
+	opacity: 0.75;
+	width:250px;
+}
+
+header nav ul li li {
+	float: left;
+	width: 350px;
+	padding-top: 10px;
+	margin: 0px;
+	list-style: none;
+}
+
+header .search-container {
+	float: right;
+  }
+header input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+  }
+  
+header .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  header .search-container button:hover {
+	background: #ccc;
+  }
+  
+@media screen and (max-width: 600px) {
+	header .search-container {
+	  float: none;
+	}
+	header a, header input[type=text], header .search-container button {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	  width: 100%;
+	  margin: 0;
+	  padding: 14px;
+	}
+header input[type=text] {
+	  border: 1px solid #ccc;  
+	}
+  }
+header .link-icons {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+header .link-icons a {
+	text-decoration: none;
+	color: #394352;
+	padding: 0 10px;
+}
+header .link-icons a:hover {
+	color: #4e5c70;
+}
+header .link-icons a i {
+	font-size: 18px;
+}
+header .link-icons a span {
+	display: inline-block;
+	text-align: center;
+	background-color: #63748e;
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+main .home .home-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 40px 0 0 40px;
+	
+}
+main .home .home-wrapper .homeimg{
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	width: 30%;
+	padding-bottom: 60px;
+}
+
+
+main .home .home-wrapper .homeimg img{
+	transform: scale(1.00);
+	transition: transform 1s;
+}
+main > .homeimg:hover img , main .home .home-wrapper .homeimg:hover img {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+
+main .home .home-wrapper .homeimg .cat{
+	display: block;
+	color: #555555;
+	padding: 20px 0 2px 0;
+	font-size: 20px;
+}
+
+main > .home .home-wrapper .homeimg:hover .cat{
+	text-decoration: underline;
+}
+
+main .home .home-wrapper .homeimg .desc{
+	display: block;
+	color: #999999;
+}
+
+main .featured {
+	display: flex;
+	background-image: url(imgs/featured-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding-top: 1px;
+	justify-content: center;
+	text-align: center;
+}
+main .featured h2 {
+	width: 1050px;
+	font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+	font-size: 68px;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+	padding-top: 200px;
+}
+
+main h2 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid #EEEEEE;
+}
+main > .products, main .products .products-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 40px 0 0 40px;
+}
+main > .products .product, main .products .products-wrapper .product {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	width: 25%;
+	padding-bottom: 60px;
+}
+main > .products .product img, main .products .products-wrapper .product img {
+	transform: scale(1);
+	transition: transform 1s;
+}
+main > .products .product .name, main .products .products-wrapper .product .name {
+	display: block;
+	color: #555555;
+	padding: 20px 0 2px 0;
+}
+main > .products .product .price, main .products .products-wrapper .product .price {
+	display: block;
+	color: #999999;
+}
+main > .products .product .price, main .products .products-wrapper .product .out {
+	display: block;
+	color: #EE4B2B;
+}
+main > .products .product .price, main .products .products-wrapper .product .in {
+	display: block;
+	color: #BBBBBB;
+}
+main > .products .product:hover img, main .products .products-wrapper .product:hover img {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+main > .products .product:hover .name, main .products .products-wrapper .product:hover .name {
+	text-decoration: underline;
+}
+
+main > .products .products-wrapper form input[type="number"] {
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	width: 25%;
+	padding-bottom: 60px;
+	display: block;
+	padding: 0px 0 2px 0;
+}
+main > .products .products-wrapper form input[type="submit"] {
+	background: #4e5c70;
+	border: 0;
+	color: #FFFFFF;
+	width: 200px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding: 10px 0 10px 0;
+}
+main > .product {
+	display: flex;
+	padding: 40px 0;
+}
+main > .product > div {
+	padding-left: 15px;
+}
+main > .product h1 {
+	font-size: 34px;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+main > .product .price {
+	display: block;
+	font-size: 22px;
+	color: #999999;
+}
+main > .product form {
+	display: flex;
+	flex-flow: column;
+	margin: 40px 0;
+}
+main > .product form input[type="number"] {
+	width: 400px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main > .product form input[type="submit"] {
+	background: #4e5c70;
+	border: 0;
+	color: #FFFFFF;
+	width: 400px;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+main > .product form input[type="submit"]:hover {
+	background: #434f61;
+}
+main > .products h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main > .products .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main > .products .buttons a {
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+main > .products .buttons a:hover {
+	background: #434f61;
+}
+
+
+main .cart h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .cart table {
+	width: 100%;
+}
+main .cart table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table thead td:last-child {
+	text-align: right;
+}
+main .cart table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table tbody td:last-child {
+	text-align: right;
+}
+main .cart table .img {
+	width: 80px;
+}
+main .cart table .remove {
+	color: #777777;
+	font-size: 12px;
+	padding-top: 3px;
+}
+main .cart table .remove:hover {
+	text-decoration: underline;
+}
+main .cart table .price {
+	color: #999999;
+}
+main .cart table a {
+	text-decoration: none;
+	color: #555555;
+}
+main .cart table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main .cart .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+main .cart .subtotal .text {
+	padding-right: 40px;
+	font-size: 18px;
+}
+main .cart .subtotal .price {
+	font-size: 18px;
+	color: #999999;
+}
+main .cart .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main .cart .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+main .cart .buttons input[type="submit"]:hover {
+	background: #434f61;
+}
+main .cart .buttons input[type="reset"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+main .cart .buttons input[type="reset"]:hover {
+	background: #434f61;
+}
+main .placeorder h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .placeorder p {
+	text-align: center;
+}
+
+main .delivery{
+	padding-top: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	margin-left: 70px;
+  }
+  main .delivery p{
+	color: red;
+	display: inline;
+  }
+ main .delivery input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	width:500px;
+	font-size: 17px;
+	border: none;
+  }
+
+  main .delivery .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: #4e5c70;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+main .delivery .buttons input[type="submit"]:hover {
+	background: #434f61;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #EEEEEE;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.footlink{
+    text-decoration: none;
+    color: black;
+}
+.footlink:hover{
+    color: #87ab69;
+}
